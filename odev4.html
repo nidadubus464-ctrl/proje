@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pati Dostu Barınağı</title>
+
+<link rel="stylesheet" href="odev4.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🐾 Pati Dostu Barınağı 🐾</h1>
+
+<nav>
+<button onclick="showPage('anasayfa')">Ana Sayfa</button>
+<button onclick="showPage('hayvanlar')">Hayvanlarımız</button>
+<button onclick="showPage('hikayeler')">Hikayeleri</button>
+<button onclick="kontrolSahiplenme()">Sahiplenme Formu</button>
+<button onclick="kontrolBagis()">Bağış Yap</button>
+<button onclick="showPage('bildir')">Hayvan Bildir</button>
+<button onclick="showPage('kayit')">Kayıt Formu</button>
+<button onclick="showPage('giris')">Kullanıcı Girişi</button>
+</nav>
+
+</header>
+
+<!-- ANA SAYFA -->
+
+<section id="anasayfa" class="active">
+
+<div class="hero">
+
+<h2>Sokaktaki Dostlarımız İçin Umut Ol!</h2>
+
+<p>
+Pati Dostu Barınağı olarak sokakta yaşayan can dostlarımızın
+tedavi edilmesi, beslenmesi ve güvenli bir yuvaya kavuşması için çalışıyoruz.
+Sen de bağış yapabilir veya bir dostumuzu sahiplenebilirsin.
+</p>
+
+<img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?q=80&w=1200&auto=format&fit=crop">
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Bağış Yap</h3>
+<p>Mama, bakım ve tedavi desteği sağlayabilirsin.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Sahiplen</h3>
+<p>Bir can dostumuza sıcak yuva olabilirsin.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Gönüllü Ol</h3>
+<p>Barınağımıza gönüllü olarak destek olabilirsin.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- HAYVANLAR -->
+
+<section id="hayvanlar">
+
+<h1 style="text-align:center;color:#ff006e;font-size:40px;">
+🐾 Sahiplenilmeyi Bekleyen Dostlarımız 🐾
+</h1>
+
+<div class="cards">
+
+<div class="card">
+<img src="hayvanlar/golden.jpg">
+<div class="card-content">
+<h3>No:101 - Karamel</h3>
+<p>Cins: Golden Retriever</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hayvanlar/british.webp">
+<div class="card-content">
+<h3>No:102 - Minnak</h3>
+<p>Cins: British Shorthair</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hayvanlar/labrador.webp">
+<div class="card-content">
+<h3>No:103 - Fındık</h3>
+<p>Cins: Labrador Retriever</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hayvanlar/iran.png">
+<div class="card-content">
+<h3>No:104 - Pamuk</h3>
+<p>Cins: İran Kedisi</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hayvanlar/almankurdu.jpg">
+<div class="card-content">
+<h3>No:105 - Leo</h3>
+<p>Cins: Alman Kurdu</p>
+</div>
+</div>
+
+<div class="card">
+<img src="hayvanlar/beagle.jpg">
+<div class="card-content">
+<h3>No:106 - Maya</h3>
+<p>Cins: Beagle</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- HİKAYELER -->
+
+<section id="hikayeler">
+
+<h1 style="text-align:center;color:#ff006e;font-size:45px;margin-bottom:40px;">
+💔 Dostlarımızın Hikayeleri 💔
+</h1>
+
+<div class="info">
+<h2>No:101 - Karamel</h2>
+<p>
+Karamel şehir dışında terk edilmiş halde bulundu.
+Şimdi sıcak bir yuva bekliyor.
+</p>
+</div>
+
+<div class="info">
+<h2>No:102 - Minnak</h2>
+<p>
+Minnak bir arabanın motor kısmında mahsur kalmış halde bulundu.
+Şimdi sevgi dolu bir aile arıyor.
+</p>
+</div>
+
+<div class="info">
+<h2>No:103 - Fındık</h2>
+<p>
+Fındık yoğun kar yağışı sırasında sokakta yaşam mücadelesi veriyordu.
+Şimdi oldukça neşeli bir köpek.
+</p>
+</div>
+
+</section>
+
+<!-- SAHİPLENME -->
+
+<section id="sahiplenme">
+
+<div class="form-box">
+
+<h2>🐾 Sahiplenme Formu 🐾</h2>
+
+<form>
+
+<input type="text" placeholder="Ad Soyad" required>
+
+<input type="email" placeholder="E-Posta" required>
+
+<input type="text" placeholder="Sahiplenmek İstediğiniz Hayvanın Adı">
+
+<input type="number" placeholder="Hayvan Numarası">
+
+<textarea placeholder="Neden sahiplenmek istiyorsunuz?"></textarea>
+
+<button type="submit">Başvuruyu Gönder</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- BAĞIŞ -->
+
+<section id="bagis">
+
+<div class="form-box">
+
+<h2>💖 Bağış Yap 💖</h2>
+
+<div class="uyari">
+Bağış yapabilmek için kayıt olup giriş yapmanız zorunludur.
+</div>
+
+<form id="bagisForm">
+
+<input type="text" placeholder="Ad Soyad" required>
+
+<input type="number" placeholder="Bağış Miktarı" required>
+
+<select required>
+<option>Kredi Kartı</option>
+<option>Havale / EFT</option>
+<option>Mobil Ödeme</option>
+</select>
+
+<textarea placeholder="Mesajınız"></textarea>
+
+<button type="submit">Bağış Yap</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- HAYVAN BİLDİR -->
+
+<section id="bildir">
+
+<div class="form-box">
+
+<h2>🚨 Bakıma İhtiyacı Olan Hayvan Bildir 🚨</h2>
+
+<form id="bildirimForm">
+
+<input type="text" placeholder="Ad Soyad" required>
+
+<input type="tel" placeholder="Telefon Numaranız" required>
+
+<input type="text" placeholder="Hayvanın Bulunduğu Konum" required>
+
+<textarea placeholder="Hayvanın durumu hakkında bilgi verin"></textarea>
+
+<button type="submit">Bildirimi Gönder</button>
+
+</form>
+
+<div class="uyari" style="margin-top:20px;">
+📞 Acil durum iletişim numaramız: 0555 555 55 55
+</div>
+
+</div>
+
+</section>
+
+<!-- KAYIT -->
+
+<section id="kayit">
+
+<div class="form-box">
+
+<h2>📝 Kullanıcı Kayıt Formu</h2>
+
+<form id="kayitForm">
+
+<input type="text" id="kayitAd" placeholder="Ad Soyad" required>
+
+<input type="email" id="kayitMail" placeholder="E-Posta" required>
+
+<input type="password" id="kayitSifre" placeholder="Şifre" required>
+
+<input type="password" id="kayitSifre2" placeholder="Şifre Tekrar" required>
+
+<button type="submit">Kayıt Ol</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- GİRİŞ -->
+
+<section id="giris">
+
+<div class="form-box">
+
+<h2>🔐 Kullanıcı Girişi</h2>
+
+<form id="girisForm">
+
+<input type="email" id="girisMail" placeholder="E-Posta" required>
+
+<input type="password" id="girisSifre" placeholder="Şifre" required>
+
+<button type="submit">Giriş Yap</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>🐾 Pati Dostu Barınağı</p>
+<p>Sokak hayvanları için sevgi ve umut.</p>
+<p>📞 0555 555 55 55</p>
+<p>📧 patidostu@gmail.com</p>
+
+</footer>
+
+<script src="odev4.js"></script>
+
+</body>
+</html>
